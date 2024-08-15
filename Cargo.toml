@@ -1,0 +1,11 @@
+[package]
+name = "co2mon"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hidapi = "2.6.3"
+log = "0.4.22"
+pretty_env_logger = "0.5.0"
+prometheus = "0.13.4"
+tiny_http = "0.12.0"
