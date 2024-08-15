@@ -12,6 +12,7 @@ fn find(ctx: &HidApi) -> &DeviceInfo {
 }
 
 pub fn decrypt(data: &mut [u8; 8]) {
+    // see https://hackaday.io/project/5301-reverse-engineering-a-low-cost-usb-co-monitor/log/16905-its-you
     const CSTATE: &[u8; 8] = b"\x48\x74\x65\x6D\x70\x39\x39\x65";
     const SHUFFLE: &[usize; 8] = &[2, 4, 0, 7, 1, 6, 5, 3];
 
