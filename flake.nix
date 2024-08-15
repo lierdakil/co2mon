@@ -28,6 +28,7 @@
         src = lib.cleanSource ./.;
         cargoLock.lockFile = ./Cargo.lock;
         nativeBuildInputs = [ pkg-config ];
+        buildInputs = [ udev ];
       };
     };
 }
