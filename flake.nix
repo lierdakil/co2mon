@@ -11,7 +11,6 @@
     in
     with pkgs;
     {
-      inherit pkgs;
       devShells.default = mkShell {
         buildInputs = [
           rustc
@@ -22,7 +21,6 @@
         ];
         # Environment variables
         RUST_SRC_PATH = rustPlatform.rustLibSrc;
-        LD_LIBRARY_PATH = "${openssl.out}/lib:${zlib}/lib:${systemd}/lib";
       };
       packages.${system}.default = rustPlatform.buildRustPackage {
         pname = manifest.name;
