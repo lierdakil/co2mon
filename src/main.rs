@@ -2,7 +2,6 @@ use std::time::Duration;
 
 use tiny_http::{Header, Response, Server};
 
-mod decrypt;
 mod hid;
 mod prometheus;
 
